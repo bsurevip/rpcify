@@ -12,8 +12,8 @@ npm install
 ```
 var rpcify = require('rpcify');
 
-var headlessWallet = require('headless-byteball');  // this is a module whose methods you want to expose via RPC
-var balances = require('byteballcore/balances.js'); // another such module
+var headlessWallet = require('bng-headless');  // this is a module whose methods you want to expose via RPC
+var balances = require('bmg-core/balances.js'); // another such module
 
 // start listening on RPC port
 rpcify.listen(6333, '127.0.0.1');
